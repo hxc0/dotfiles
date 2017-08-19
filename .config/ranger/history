@@ -1,0 +1,18 @@
+rm
+?
+delete <ENTER>
+delete; <ENTER>
+delete <CR>
+set colorscheme solarized
+open_with 
+help
+set show_hidden=true
+set preview_images=true
+search vim
+open_with vim
+
+set colorscheme jungle
+set colorscheme default
+set colorscheme snow
+set colorscheme zenburn
+delete
