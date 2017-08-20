@@ -16,9 +16,9 @@ filetype plugin indent plugin on
 set noerrorbells
 "colorscheme stuff
 set t_Co=256
-colorscheme hxc0
-let g:hxc0_high_Contrast=1
-let g:hxc0_alternate_Error=1
+colorscheme doranged
+let g:doranged_high_Contrast=1
+let g:doranged_alternate_Error=1
 
 set clipboard=unnamed
 set hlsearch
