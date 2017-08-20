@@ -14,3 +14,5 @@ Requires:
 - ranger (optional)
 - cmus (optional)
 - some theme manager can be useful, I recommend lxappearance
+
+.i3/config assumes that lock.sh is symlinked by /usr/bin/lock
