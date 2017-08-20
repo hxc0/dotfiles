@@ -22,7 +22,7 @@ floating_modifier Mod3
 #exec --no-startup-id xsetroot -solid "#333333"
 exec --no-startup-id feh --bg-center /home/hxc0/Pictures/wp/leica_m9.jpg
 exec /usr/bin/compton --config /home/hxc0/.compton.conf
-exec --no-startup-id polybar hxc0
+exec --no-startup-id polybar doranged
 #exec --no-startup-id i3-msg workspace 1; exec firefox
 #exec --no-startup-id "i3-msg 'workspace 2; exec gnome-terminal'"
 #exec --no-startup-id i3-msg workspace 1; exec firefox
