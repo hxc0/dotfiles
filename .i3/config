@@ -12,6 +12,7 @@
 # font for window titles. ISO 10646 = Unicode
 #font pango:tamsyn 10
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+#font pango:Tamzen Regular 9
 
 focus_follows_mouse no
 
@@ -152,6 +153,8 @@ client.focused_inactive #333333 #5f676a #ffffff #484e50
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.urgent           #fc7f11 #900000 #ffffff #900000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000
+
+#for_window [class=.*] title_format " %title"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
