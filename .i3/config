@@ -10,6 +10,7 @@
 #
 
 # font for window titles. ISO 10646 = Unicode
+# Below you can find my recommended fonts for titles, tamsyn is similar to tamzen
 #font pango:tamsyn 10
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 #font pango:Tamzen Regular 9
@@ -19,16 +20,18 @@ focus_follows_mouse no
 # use Mouse+Mod3 to drag floating windows to their wanted position
 floating_modifier Mod3
 
-#exec --no-startup-id xsetroot -solid "#333333"
+# Start wallpaper, compton for opaque terminals and polybar
 exec --no-startup-id feh --bg-center /home/hxc0/Pictures/wp/leica_m9.jpg
 exec /usr/bin/compton --config /home/hxc0/.compton.conf
 exec --no-startup-id polybar doranged
-#exec --no-startup-id i3-msg workspace 1; exec firefox
-#exec --no-startup-id "i3-msg 'workspace 2; exec gnome-terminal'"
-#exec --no-startup-id i3-msg workspace 1; exec firefox
+
+# Bind printscreen key to scrot
+bindsym Print exec scrot '%Y-%m-%d_%H%M%S_$wx$h.png' -z -e 'mv $f ~/Pictures/Screenshots'
+
 # start a terminal
 bindsym Mod3+Return exec xfce4-terminal
 
+# lock screen using lock.sh
 bindsym Mod3+o exec lock
 
 # kill focused window
@@ -63,7 +66,7 @@ bindsym Mod3+Shift+Up move up
 bindsym Mod3+Shift+Right move right
 
 # split in horizontal orientation
-#bindsym Mod3+h split h
+bindsym Mod3+b split h
 
 # split in vertical orientation
 bindsym Mod3+v split v
@@ -145,7 +148,6 @@ mode "resize" {
 }
 
 bindsym Mod3+r mode "resize"
-bindsym Print exec scrot '%Y-%m-%d_%H%M%S_$wx$h.png' -z -e 'mv $f ~/Pictures/Screenshots'
 
 # class                 border  backgr. text    indicator
 client.focused          #b75f12 #787878 #ffffff #484e50
