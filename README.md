@@ -1,5 +1,5 @@
-# dotfiles
-My ricing dotfiles
+# Doranged dotfiles
+### My ricing dotfiles
 
 Requires:
 - i3
@@ -8,7 +8,7 @@ Requires:
 - neofetch
 - xfce4-terminal
 - compton
-- Tamsyn font
+- Tamzen font (can be replaced with tamsyn)
 - feh
 - vim
 - ranger (optional)
