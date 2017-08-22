@@ -30,4 +30,5 @@ ColorForeground=#f4e7f4e7f4e7
 ColorBackground=#0ccc0ccc0ccc
 ColorCursor=#dcdcdc
 ColorPalette=rgb(40,40,40);rgb(146,42,42);rgb(70,191,126);rgb(237,147,87);rgb(82,152,223);rgb(246,99,178);rgb(122,249,255);rgb(220,220,220);rgb(112,144,128);rgb(244,81,81);rgb(119,234,151);rgb(255,224,115);rgb(149,188,236);rgb(245,128,211);rgb(128,240,245);rgb(255,255,255)
+ShortcutsNoHelpkey=TRUE
 
