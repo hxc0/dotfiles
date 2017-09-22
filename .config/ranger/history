@@ -4,7 +4,6 @@ delete <ENTER>
 delete; <ENTER>
 delete <CR>
 set colorscheme solarized
-open_with 
 help
 set show_hidden=true
 set preview_images=true
@@ -15,4 +14,10 @@ set colorscheme jungle
 set colorscheme default
 set colorscheme snow
 set colorscheme zenburn
+open_with firefox
 delete
+open_with 
+search doc
+search dow
+open_with
+rename avatar_edd.jpg

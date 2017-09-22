@@ -138,9 +138,9 @@ set $WHITE = 7
 
 # CHANGME: If you want to modify the "theme" change the colors here
 #          or just create a ~/.gdbinit.local and set these variables there
-set $COLOR_REGNAME = $GREEN
-set $COLOR_REGVAL = $BLACK
-set $COLOR_REGVAL_MODIFIED  = $RED
+set $COLOR_REGNAME = $YELLOW
+set $COLOR_REGVAL = $CYAN
+set $COLOR_REGVAL_MODIFIED  = $GREEN
 set $COLOR_SEPARATOR = $BLUE
 set $COLOR_CPUFLAGS = $RED
 
@@ -161,7 +161,7 @@ define color
 	 		else
 	 			# YELLOW
 	 			if $arg0 == 3
-	 				echo \033[33m
+	 				echo \033[33;01m
 	 			else
 	 				# BLUE
 	 				if $arg0 == 4
@@ -210,11 +210,11 @@ end
 # this way anyone can have their custom prompt - argp's idea :-)
 # can also be used to redefine anything else in particular the colors aka theming
 # just remap the color variables defined above
-source ~/.gdbinit.local
+#source ~/.gdbinit.local
 
 # can't use the color functions because we are using the set command
 if $COLOREDPROMPT == 1
-	set prompt \033[32mgdb$ \033[0m
+	set prompt \033[33;01mgdb$ \033[0m
 end
 
 # Initialize these variables else comparisons will fail for coloring

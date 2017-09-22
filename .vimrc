@@ -7,7 +7,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/syntastic'
 Plugin 'editorconfig/editorconfig-vim'
-"Plugin 'nvie/vim-flake8'
+Plugin 'nvie/vim-flake8'
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'jistr/vim-nerdtree-tabs'
 
@@ -20,6 +20,7 @@ set t_Co=256
 colorscheme doranged
 let g:doranged_high_Contrast=1
 let g:doranged_alternate_Error=1
+let g:syntastic_python_python_exec = '/usr/bin/python2'
 
 set clipboard=unnamed
 set hlsearch

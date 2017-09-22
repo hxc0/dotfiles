@@ -39,8 +39,9 @@ alias dirl='ls -laFtr --color=auto '
 alias vi="vim"
 alias cd..="cd .."
 alias netscan="sudo arp-scan --interface=wlp3s0 --localnet --retry=5 --timeout=1000"
-alias msfconsole="msfconsole -L"
+alias msfconsole="systemctl start postgresql; msfconsole -L -x \"db_connect ${USER}@msf\""
 alias alpine="alpine -p ${HOME}/.config/alpine/.pinerc -passfile ${HOME}/.config/alpine/.passfile -smimedir ${HOME}/.config/alpine/.alpine-smime/ -sort arrival/reverse -d 0"
+alias oysttyer="oysttyer -ansi"
 
 neofetch --ascii_colors 74 74 --colors 230 228 214 253 221 230
 stty -ixon

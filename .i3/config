@@ -21,7 +21,7 @@ focus_follows_mouse no
 floating_modifier Mod3
 
 # Start wallpaper, compton for opaque terminals and polybar
-exec --no-startup-id feh --bg-center /home/hxc0/Pictures/wp/leica_m9.jpg
+exec --no-startup-id feh --bg-center --randomize /home/hxc0/Pictures/wp/*
 exec /usr/bin/compton --config /home/hxc0/.compton.conf
 exec --no-startup-id polybar doranged
 
